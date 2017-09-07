@@ -367,7 +367,7 @@ func (cluster *Cluster) update(node *redisNode) error {
 
     // TODO: Is full coverage really needed?
     if nslots != kClusterSlots {
-	return fmt.Errorf("update: %s slots not full covered", node.address)
+        // return fmt.Errorf("update: %s slots not full covered", node.address)
     }
 
     cluster.rwLock.Lock()
